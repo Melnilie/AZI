@@ -1,2 +1,2 @@
 # AZI
-Aktuelle und zukünftige Internettechnologien Seminar Unterlagen
+Aktuelle und zukünftige Netzwerktechnologien Seminar Unterlagen
