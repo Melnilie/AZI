@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.13)  24 APR 2021 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.13)  25 APR 2021 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Uni Robotik/Aktuelle und zukünfigte Internettechnologien/AZuNet/Paper Vorlage/MBadura"
-(d:/Uni Robotik/Aktuelle und zukünfigte Internettechnologien/AZuNet/Paper Vorlage/MBadura.tex
+**"d:/Uni Robotik/Aktuelle und zukünfigte Internettechnologien/AZuNet/Paper/MBadura"
+(d:/Uni Robotik/Aktuelle und zukünfigte Internettechnologien/AZuNet/Paper/MBadura.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./acmart.cls
 Document Class: acmart 2019/04/22 v1.60 Typesetting articles for the Association for Computing Machinery
@@ -840,32 +840,15 @@ Overfull \hbox (13.84244pt too wide) in paragraph at lines 105--105
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) Melanie Badura. 2021. Com-pu-ta-tional Re-quire-ments for Nano-machines.
  []
 
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 109.
-(d:/Program Files/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 109.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zi4' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-
-Package natbib Warning: Citation `veytsmanlatex' on page 1 undefined on input line 109.
-
-<figures//sample-figure.pdf, id=33, 236.885pt x 128.48pt>
+<figures//sample-figure.pdf, id=31, 236.885pt x 128.48pt>
 File: figures//sample-figure.pdf Graphic file (type pdf)
 <use figures//sample-figure.pdf>
-Package pdftex.def Info: figures//sample-figure.pdf  used on input line 136.
+Package pdftex.def Info: figures//sample-figure.pdf  used on input line 142.
 (pdftex.def)             Requested size: 118.4422pt x 64.23984pt.
 
-Class acmart Warning: A possible image without description on input line 139.
+Class acmart Warning: A possible image without description on input line 145.
 
 No file MBadura.bbl.
-
-Package natbib Warning: There were undefined citations.
-
 
 Class acmart Warning: Some images may lack descriptions.
 
@@ -880,18 +863,18 @@ Package rerunfilecheck Info: File `MBadura.out' has not changed.
 (rerunfilecheck)             Checksum: 11D79E73E0523728F21806EB0D831568;547.
  ) 
 Here is how much of TeX's memory you used:
- 19073 strings out of 478994
- 295289 string characters out of 5855131
- 622583 words of memory out of 5000000
- 35730 multiletter control sequences out of 15000+600000
- 563098 words of font info for 311 fonts, out of 8000000 for 9000
+ 19060 strings out of 478994
+ 295099 string characters out of 5855131
+ 624512 words of memory out of 5000000
+ 35712 multiletter control sequences out of 15000+600000
+ 563771 words of font info for 317 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 96i,11n,131p,490b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_mmutss.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}<d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on MBadura.pdf (1 page, 322007 bytes).
+ 96i,11n,131p,482b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_mmutss.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}<d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on MBadura.pdf (1 page, 314235 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  12 named destinations out of 1000 (max. 500000)
- 101946 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 101434 words of extra memory for PDF output out of 106986 (max. 10000000)
 
