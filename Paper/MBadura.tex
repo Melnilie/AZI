@@ -115,27 +115,70 @@ by analyzing the tasks that nano-machines handle.
 
 
 \section{Mittelteil?}
+Most problems that a nano-machine has to solve need basic arithmetic.
+Others are solved with pattern matching and parity.
+To solve the communication problem, there are forwarding and routing protocols. 
+These protocols are solved in different ways so that a nano-machine can handle several types of messages.
+Communication is a perfect example for the use of basic arithmetics, pattern matching, storage needs.
+However, not only for the storage of routing information they need memory but also for other values with which they must work, must be stored.
+Nano-machines should also be able to perform more complex operations like implementing a neural network.
+They use graph algorithms for this. 
+All these problems divide into complexity classes.
+As the name suggests, the problems divide into classes that have approximately the same complexity.
+This is found out by reduction. For example, subtract can be reduced to add. 
+Here, the simplest complexity class can be used, but also with a nano-machine that has been built to solve the problems of the most difficult complexity class.
+However, this does not work the other way around.
+In table \ref{table1}, the three different classes are seen.
+An L-machine can solve problems like a Turing machine.
+The class $AC^0$ describes boolean circuits with polynomial size and a constant depth, whereas the class $NC^1$ may have a logarithmic depth and two inputs per gate. 
+\\
+bla\\
+bla\\bla\\
+bla\\
+bla\\bla\\
+bla\\
+bla\\bla\\
+bla\\
+bla\\bla\\
+bla\\
+bla\\bla\\
+als nächstes ab 5 und du hast für mittelteil keinen titel und nicht geschaut was grammerly so sagt!
+Das table kommt wieder wenn du hier mehr schreibt\\
+\begin{table}
+\begin{tabular}{ p{1.5cm}|p{2cm} p{2cm}|p{1.5cm} }
+  \hline
+  %\multicolumn{5}{|c|}{MSE} \\
+  Machine & \multicolumn{2}{c|}{Problems}  & Origin\\
+  \hline
+  $AC^0$: & $ADD$ & $ODD/EVEN$&  \\
+          & $SUB$ & $DIV_{2}$&  \\
+          & $SIGN$ & $MOD_{2}$&  \\
+          & $INC$ & $LOG_{2}$&  \\
+          & $AND/OR$ & $INV$&  \\
+          &  & &  \\
+  $NC^1$:   & $MULT$ &$MIN/MAX$   & \\
+           & $DIV$ & $PARITY$&  \\
+           & $EXP$ & $REG$&  \\
+           & $MAJOR$ & $MOD$&  \\
+           & $THRES$ & $AVG$&  \\
+           &  & &  \\
+  $L$:      &   $Label$ &$D_{FS}$ &     \\
+           & $Log mem$ & $B_{FS}$&  \\
+           & $REACH$ & $MEDIAN$&  \\
+          
+  \hline 
+  \end{tabular}\\
+  
+  \caption{Complexity classes of nano-machines}
+  \label{table1}
+  \end{table}
+  
+
 
 \section{Conclusion}
 
 \subsection{Subsection}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Sed aliquam nisl turpis, sit amet mollis leo accumsan vel.
-Donec semper turpis dui, a porttitor lorem tincidunt id.
-Phasellus gravida, purus non faucibus euismod, lectus tortor maximus elit, vestibulum lobortis purus turpis non urna.
-Fusce feugiat lectus ut massa molestie, non interdum augue porta.
-Nunc dapibus odio nec neque cursus, ut lacinia velit rutrum.
-Duis tempor nulla velit, sed pellentesque nunc imperdiet ut.
-Phasellus eget hendrerit neque.
-Suspendisse aliquet nulla id sem aliquam aliquam sed a orci.
-Duis sem est, hendrerit nec porttitor sit amet, maximus sed nulla.
-Suspendisse et dictum massa.
-Morbi non diam nec orci sodales eleifend.
-Etiam eget finibus purus, a malesuada ipsum.
-Nullam ac nisi nec elit faucibus aliquet.
-Nulla feugiat velit sed sodales eleifend.
-Donec orci nulla, viverra et mi in, sagittis egestas urna.
 
 \begin{figure}[htbp]
   \centering
