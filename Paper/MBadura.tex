@@ -1,5 +1,5 @@
 % !TEX program = pdflatex
-% !BIB pro%gram = bibtex
+% !BIB program = bibtex
 % !TEX encoding = UTF-8 Unicode
 % !TEX spellcheck = en_us
 \documentclass[10pt,sigconf]{acmart}
@@ -57,7 +57,7 @@
 
 \begin{abstract}
 This paper is a shortpaper for "Computational Requirements for 
-Nano-Machines: There is limited Space at the bottom".\footnote{}
+Nano-Machines: There is limited Space at the bottom".\cite{lau2017computational}{}
 \end{abstract}
 
 %
@@ -130,7 +130,13 @@ Here, the simplest complexity class can be used, but also with a nano-machine th
 However, this does not work the other way around.
 In table \ref{table1}, the three different classes are seen.
 An L-machine can solve problems like a Turing machine.
-The class $AC^0$ describes boolean circuits with polynomial size and a constant depth, whereas the class $NC^1$ may have a logarithmic depth and two inputs per gate. 
+The class $AC^0$ describes boolean circuits with polynomial size and a constant depth, whereas the class $NC^1$ may have a logarithmic depth and two inputs per gate.\\ 
+Problems can lower their class if researchers can find new reductions for them. 
+However, problems exist that need more powerful machines or global knowledge about the network.
+Thus problems, like addressing, routing broadcasting/forwarding, could not be divided into the three complexity classes.
+
+Hier gehts mit 6 weiter.
+Falls du auf zu wenig zeilen kommst, ein reduction beispiel auf jeden fall machen. Und vllt nochmal auf origin eingehen.
 \\
 bla\\
 bla\\bla\\
@@ -140,10 +146,7 @@ bla\\
 bla\\bla\\
 bla\\
 bla\\bla\\
-bla\\
-bla\\bla\\
-als nächstes ab 5 und du hast für mittelteil keinen titel und nicht geschaut was grammerly so sagt!
-Das table kommt wieder wenn du hier mehr schreibt\\
+
 \begin{table}
 \begin{tabular}{ p{1.5cm}|p{2cm} p{2cm}|p{1.5cm} }
   \hline
