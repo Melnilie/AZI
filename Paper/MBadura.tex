@@ -115,6 +115,35 @@ by analyzing the tasks that nano-machines handle.
 
 
 \section{Mittelteil?}
+\begin{table}[h!]
+  \begin{tabular}{ p{1.5cm}|p{2cm} p{2cm}|p{1.5cm} }
+    \hline
+    %\multicolumn{5}{|c|}{MSE} \\
+    Machine & \multicolumn{2}{c|}{Problems}  & Origin\\
+    \hline
+    $AC^0$: & $ADD$ & $ODD/EVEN$&  \\
+            & $SUB$ & $DIV_{2}$&  \\
+            & $SIGN$ & $MOD_{2}$&  \\
+            & $INC$ & $LOG_{2}$&  \\
+            & $AND/OR$ & $INV$&  \\
+            &  & &  \\
+    $NC^1$:   & $MULT$ &$MIN/MAX$   & \\
+             & $DIV$ & $PARITY$&  \\
+             & $EXP$ & $REG$&  \\
+             & $MAJOR$ & $MOD$&  \\
+             & $THRES$ & $AVG$&  \\
+             &  & &  \\
+    $L$:      &   $Label$ &$D_{FS}$ &     \\
+             & $Log mem$ & $B_{FS}$&  \\
+             & $REACH$ & $MEDIAN$&  \\
+            
+    \hline 
+  \end{tabular}\\
+    
+  \caption{Complexity classes of nano-machines}
+  \label{table1}
+\end{table}
+
 Most problems that a nano-machine has to solve need basic arithmetic.
 Pattern matching and parity solve other problems.
 Protocols, such as forwarding and routing, solve the communication problem. 
@@ -126,48 +155,18 @@ They use graph algorithms for this.\\
 All these problems divide into complexity classes.
 As the name suggests, the problems divide into classes that have approximately the same complexity.
 The reduction of operations chooses the complexity class. For example, subtract can be reduced to add. 
-Here, the simplest complexity class can be used, but also with a nano-machine that has been built to solve the problems of the most difficult complexity class.
+A nano-machine that solves the problems of the highest complexity class can also use the operations of the lower classes.
 However, this does not work the other way around.
 In table \ref{table1}, the three different classes are seen.
 An L-machine can solve problems like a Turing machine.
-The class $AC^0$ describes boolean circuits with polynomial size and a constant depth, whereas the class $NC^1$ may have a logarithmic depth and two inputs per gate.\\ 
+The class $AC^0$ describes boolean circuits with polynomial-size and a constant depth, whereas the class $NC^1$ may have a logarithmic depth and two inputs per gate.\\ 
 Problems can lower their class if researchers can find new reductions for them. 
 However, problems exist that need more powerful machines or global knowledge about the network.
 Thus problems, like addressing, routing broadcasting/forwarding, could not be divided into the three complexity classes.\\
-\begin{table}[h!]
-\begin{tabular}{ p{1.5cm}|p{2cm} p{2cm}|p{1.5cm} }
-  \hline
-  %\multicolumn{5}{|c|}{MSE} \\
-  Machine & \multicolumn{2}{c|}{Problems}  & Origin\\
-  \hline
-  $AC^0$: & $ADD$ & $ODD/EVEN$&  \\
-          & $SUB$ & $DIV_{2}$&  \\
-          & $SIGN$ & $MOD_{2}$&  \\
-          & $INC$ & $LOG_{2}$&  \\
-          & $AND/OR$ & $INV$&  \\
-          &  & &  \\
-  $NC^1$:   & $MULT$ &$MIN/MAX$   & \\
-           & $DIV$ & $PARITY$&  \\
-           & $EXP$ & $REG$&  \\
-           & $MAJOR$ & $MOD$&  \\
-           & $THRES$ & $AVG$&  \\
-           &  & &  \\
-  $L$:      &   $Label$ &$D_{FS}$ &     \\
-           & $Log mem$ & $B_{FS}$&  \\
-           & $REACH$ & $MEDIAN$&  \\
-          
-  \hline 
-  \end{tabular}\\
-  
-  \caption{Complexity classes of nano-machines}
-  \label{table1}
-  \end{table}
 Insights into the feasibility of Nanao-machines provides the classification of the applications according to the computational power. 
-So that when a protocol or algorithm is implemented in a nano-machine, researchers may consult Table \ref{table1}.
-The algorithm must then be decomposed into its basic operations. Afterward one looks which operation is the most complex and decides so for a complexity class.
-Just because a nano-machine may perform only a few easy operations does not mean that it is simple to build, but the choice of complexity class can help.
-
-
+Researchers may consult Table \ref{table1} to implement a protocol or an algorithm in a nano-machine. 
+The algorithm must decompose into its basic operations. Afterward, the operation that is the most complex gives the decision for a complexity class.
+Just because a nano-machine may perform only a few easy operations does not mean that it is simple to build, but the choice of complexity class can help.\\
 Considering the $AC^0$ class, if a nano-machine can add, it may do all other operations of the complexity class.
 Let us take the complexity class $NC^1$ for a practical example. In the body, a nano-machine observes the concentration of a marker with $AVG$.
 Since $THRES$ is also in the same class, this nano-machine can also check if a defined value exceeds. This without increasing the complexity nor the memory.
@@ -177,7 +176,13 @@ Falls du auf zu wenig zeilen kommst, ein reduction beispiel auf jeden fall mache
 
 
 \section{Conclusion}
-hier muss noch conclusion hin 
+This paper tries to close the gap of the insufficient specified computational requirements.
+It does so by analyzing different medical scenarios. (I don't really do that)
+The analyzed problems divide into three complexity classes: $AC^0$,$NC^1$,$L$.
+A nano-machine can then solve all the problems of his class and the class problems under him.\\
+However, additional components, such as storage or clocking, may mean that the classes do not represent the actual implementation of the nano-machines.
+Furthermore, we have not addressed the combination of operations, so the power of the complexity class may exceed.
+In addition, the definition of additional complexity classes may specify the operations in more detail.
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.13)  30 APR 2021 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.13)  1 MAY 2021 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -817,7 +817,7 @@ Overfull \hbox (13.84244pt too wide) in paragraph at lines 105--105
  []
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 133.
+(Font)              scaled to size 10.0pt on input line 119.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -826,30 +826,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1.1{d:/Program Files/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./MBadura.bbl)
-Overfull \vbox (9.59999pt too high) has occurred while \output is active []
+] (./MBadura.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+)
 
-Overfull \vbox (9.59999pt too high) has occurred while \output is active []
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 191.
+(Font)              scaled to size 10.0pt on input line 196.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 191.
- [2.2] (./MBadura.aux)
+(Font)              scaled to size 8.0pt on input line 196.
+[2.2] (./MBadura.aux)
 Package rerunfilecheck Info: File `MBadura.out' has not changed.
 (rerunfilecheck)             Checksum: F1FFA3F86D138B5124FD8090A3655B6D;511.
  ) 
 Here is how much of TeX's memory you used:
- 18991 strings out of 478994
- 292917 string characters out of 5855131
- 637887 words of memory out of 5000000
+ 18988 strings out of 478994
+ 292830 string characters out of 5855131
+ 640628 words of memory out of 5000000
  35640 multiletter control sequences out of 15000+600000
- 552174 words of font info for 299 fonts, out of 8000000 for 9000
+ 551901 words of font info for 297 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 96i,13n,131p,482b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 96i,12n,131p,482b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{d:/Program Files/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}<d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Program Files/texlive/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on MBadura.pdf (2 pages, 365098 bytes).
+Output written on MBadura.pdf (2 pages, 365736 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
