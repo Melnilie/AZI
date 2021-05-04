@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{3}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,6 +36,29 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Akyildiz, Brunetti, and Bl{\'a}zquez}{Akyildiz
+  et~al\mbox{.}}{2008}]%
+        {akyildiz2008nanonetworks}
+\bibfield{author}{\bibinfo{person}{Ian~F Akyildiz}, \bibinfo{person}{Fernando
+  Brunetti}, {and} \bibinfo{person}{Cristina Bl{\'a}zquez}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Nanonetworks: A new communication paradigm}.
+\newblock \bibinfo{journal}{\emph{Computer Networks}} \bibinfo{volume}{52},
+  \bibinfo{number}{12} (\bibinfo{year}{2008}), \bibinfo{pages}{2260--2279}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cobo and Akyildiz}{Cobo and Akyildiz}{2010}]%
+        {cobo2010bacteria}
+\bibfield{author}{\bibinfo{person}{Luis~C Cobo} {and} \bibinfo{person}{Ian~F
+  Akyildiz}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Bacteria-based communication in nanonetworks}.
+\newblock \bibinfo{journal}{\emph{Nano Communication Networks}}
+  \bibinfo{volume}{1}, \bibinfo{number}{4} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{244--256}.
+\newblock
+
 
 \bibitem[\protect\citeauthoryear{Lau, B{\"u}ther, and Gerlach}{Lau
   et~al\mbox{.}}{2017}]%

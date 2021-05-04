@@ -35,7 +35,7 @@
 
 \begin{document}
 \title{Computational Requirements for Nano-machines}
-%\titlenote{Produces the permission block, and copyright information}
+%\titlenote{Produces the permission block and copyright information}
 %\subtitle{Extended Abstract}
 
 \author{Melanie Badura}
@@ -52,12 +52,14 @@
 
 
 % The default list of authors is too long for headers}
-\renewcommand{\shortauthors}{F. Lastname et al.}
+\renewcommand{\shortauthors}{M. Badura et al.}
 
 
 \begin{abstract}
 This paper is a short paper for "Computational Requirements for 
-Nano-Machines: There is limited Space at the bottom".\cite{lau2017computational}{}
+Nano-Machines: There is limited Space at the bottom"\cite{lau2017computational}.
+The premise is to define the complexity of scenarios done at a nanoscale.
+The problems filtered out of the scenarios then sort into the complexity classes $AC^0$, $NC^1$, L.
 \end{abstract}
 
 %
@@ -107,57 +109,72 @@ Nano-Machines: There is limited Space at the bottom".\cite{lau2017computational}
 \section{Introduction}
 For years, there has been talking of using nano-machines to create solutions in medicine and other subjects. Such a machine should be able to communicate and sense/act. Computational power is also a big issue.
 Because Nano-machines are small, one question is how to implement these capabilities. 
-While many researchers already deal with communication technology (cite one here), computational capability is usually left out.
+While many researchers already deal with communication technology \cite{akyildiz2008nanonetworks}, they usually leave out computational capabilities.
 In this paper, there is an attempt to provide a general analysis of the computational capability of nano-machines.
-Since the capabilities of nano-machines vary widely, from nanoparticles with no computational capabilities to microprocessors (11 cites). Nano-machines divide into three groups according to complexity theory,
+Since the capabilities of nano-machines vary widely, from nanoparticles with no computational capabilities to microprocessors \cite{cobo2010bacteria}. Nano-machines divide into three groups according to complexity theory,
 by analyzing the tasks that nano-machines handle.
 
 
 
-\section{Mittelteil?}
+\section{Problems and their complexity classes}
 \begin{table}[h!]
-  \begin{tabular}{ p{1.5cm}|p{2cm} p{2cm}|p{1.5cm} }
+  \begin{tabular}{ p{1.5cm}|p{2cm} p{2cm}}
     \hline
     %\multicolumn{5}{|c|}{MSE} \\
-    Machine & \multicolumn{2}{c|}{Problems}  & Origin\\
+    Machine & \multicolumn{2}{c}{Problems} \\
     \hline
-    $AC^0$: & $ADD$ & $ODD/EVEN$&  \\
-            & $SUB$ & $DIV_{2}$&  \\
-            & $SIGN$ & $MOD_{2}$&  \\
-            & $INC$ & $LOG_{2}$&  \\
-            & $AND/OR$ & $INV$&  \\
-            &  & &  \\
-    $NC^1$:   & $MULT$ &$MIN/MAX$   & \\
-             & $DIV$ & $PARITY$&  \\
-             & $EXP$ & $REG$&  \\
-             & $MAJOR$ & $MOD$&  \\
-             & $THRES$ & $AVG$&  \\
-             &  & &  \\
-    $L$:      &   $Label$ &$D_{FS}$ &     \\
-             & $Log mem$ & $B_{FS}$&  \\
-             & $REACH$ & $MEDIAN$&  \\
+    $AC^0$: & $ADD$ & $ODD/EVEN$  \\
+            & $SUB$ & $DIV_{2}$  \\
+            & $SIGN$ & $MOD_{2}$  \\
+            & $INC$ & $LOG_{2}$  \\
+            & $AND/OR$ & $INV$  \\
+            &  &   \\
+    $NC^1$:   & $MULT$ &$MIN/MAX$    \\
+             & $DIV$ & $PARITY$  \\
+             & $EXP$ & $REG_{\alpha}$  \\
+             & $MAJOR$ & $MOD$  \\
+             & $THRES$ & $AVG$  \\
+             &  &   \\
+    $L$:      &   $Label$ &$D_{FS}$      \\
+             & $Log$ $mem$ & $B_{FS}$  \\
+             & $REACH$ & $MEDIAN$  \\
             
     \hline 
   \end{tabular}\\
     
-  \caption{Complexity classes of nano-machines}
+  \caption{Complexity classes of nano-machines and their problems}
   \label{table1}
 \end{table}
 
 Most problems that a nano-machine has to solve need basic arithmetic.
-Pattern matching and parity solve other problems.
+The basis for value aggregation and routing schemes build addition $ADD$, subtraction $SUB$, multiplication $MULT$, $AND$/$OR$.
+To guide conditional behavior and support sensing strategies, we compare values with $SIGN$, $EVEN$/$ODD$, $THRES$ .\\
+Pattern matching $REG_{\alpha}$ can detect antibodys and $PARITY$ verifies message integrity.\\
 Protocols, such as forwarding and routing, solve the communication problem. 
 These protocols are solved in different ways so that a nano-machine can handle several types of messages.
 Communication is a perfect example for the use of basic arithmetics, pattern matching, storage needs.
-They need memory for the storage of routing information and for other values with which they must work.
+They need memory for the storage of routing information and for other values with which they must work.\\
 Nano-machines should also be able to perform more complex operations like implementing a neural network.
-They use graph algorithms for this.\\
+They use graph algorithms to search for differing sensor readings by depth-first $D_{FS}$ or breadth-first search $B_{FS}$ or to monitor the nanonetwork functionality with the reachability $REACH$\\
+Most nano-machines need memory. The size of the memory depends on the utility of the machine.
+For example, a nano-machine with a routing algorithm must have enough ram to store multiple node labels $Label$.
+While nano-machines that observe the reaching of a drug threshold with $THRES$ must be able to store at least two values.\\
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{ComplexityClasses.PNG}
+\caption[]{The relationship between the complexity classes.\cite{lau2017computational}}
+\label{complex}
+\end{figure}
 All these problems divide into complexity classes.
 As the name suggests, the problems divide into classes that have approximately the same complexity.
 The reduction of operations chooses the complexity class. For example, subtract can be reduced to add. 
+We do this by changing the sign of the second input number with a negation gate. \\
+In figure \ref{complex} the relationship between the complexity classes can be seen.
 A nano-machine that solves the problems of the highest complexity class can also use the operations of the lower classes.
 However, this does not work the other way around.
-In table \ref{table1}, the three different classes are seen.
+An L-machine can do logarithmic calculations as well as multiplications.
+Though an $NC^1$-machine cannot do logarithmic calculations except it is $LOG_2$.  
+In table \ref{table1} we can see the three different classes and the problems they may solve.
 An L-machine can solve problems like a Turing machine.
 The class $AC^0$ describes boolean circuits with polynomial-size and a constant depth, whereas the class $NC^1$ may have a logarithmic depth and two inputs per gate.\\ 
 Problems can lower their class if researchers can find new reductions for them. 
@@ -171,14 +188,14 @@ Considering the $AC^0$ class, if a nano-machine can add, it may do all other ope
 Let us take the complexity class $NC^1$ for a practical example. In the body, a nano-machine observes the concentration of a marker with $AVG$.
 Since $THRES$ is also in the same class, this nano-machine can also check if a defined value exceeds. This without increasing the complexity nor the memory.
 
-Falls du auf zu wenig zeilen kommst, ein reduction beispiel auf jeden fall machen. Und vllt nochmal auf origin eingehen.
+
 
 
 
 \section{Conclusion}
 This paper tries to close the gap of the insufficient specified computational requirements.
-It does so by analyzing different medical scenarios. (I don't really do that)
-The analyzed problems divide into three complexity classes: $AC^0$,$NC^1$,$L$.
+It does so by analyzing different scenarios. 
+The analyzed problems divide into three complexity classes: $AC^0$, $NC^1$, $L$.
 A nano-machine can then solve all the problems of his class and the class problems under him.\\
 However, additional components, such as storage or clocking, may mean that the classes do not represent the actual implementation of the nano-machines.
 Furthermore, we have not addressed the combination of operations, so the power of the complexity class may exceed.
