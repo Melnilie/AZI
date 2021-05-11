@@ -40,7 +40,7 @@
 
 \author{Melanie Badura}
 \orcid{1234-5678-9012}
-\affiliation{%
+\affiliation{
   \institution{Universität zu Lübeck}
   \streetaddress{Ratzeburger Allee 160}
   \city{Lübeck}  
@@ -58,8 +58,8 @@
 \begin{abstract}
 This paper is a short paper for "Computational Requirements for 
 Nano-Machines: There is limited Space at the bottom"\cite{lau2017computational}.
-The premise is to define the complexity of scenarios done at a nanoscale.
-The problems filtered out of the scenarios then sort into the complexity classes $AC^0$, $NC^1$, L.
+The premise is to define the complexity of scenarios done at a nanoscale, which most research omitted.
+The problems we filter out of these scenarios sort into the complexity classes $AC^0$, $NC^1$, L.
 \end{abstract}
 
 %
@@ -71,18 +71,13 @@ The problems filtered out of the scenarios then sort into the complexity classes
 <ccs2012>
  <concept>
   <concept_id>10010520.10010553.10010562</concept_id>
-  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_desc>Computer systems organization~Embedded and cyber-physical systems</concept_desc>
   <concept_significance>500</concept_significance>
  </concept>
  <concept>
   <concept_id>10010520.10010575.10010755</concept_id>
-  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_desc>Computer systems organization~Sensor networks</concept_desc>
   <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010553.10010554</concept_id>
-  <concept_desc>Computer systems organization~Robotics</concept_desc>
-  <concept_significance>100</concept_significance>
  </concept>
  <concept>
   <concept_id>10003033.10003083.10003095</concept_id>
@@ -93,15 +88,14 @@ The problems filtered out of the scenarios then sort into the complexity classes
 \end{CCSXML}
 
 
-\ccsdesc[500]{Computer systems organization~Embedded systems}
-\ccsdesc[300]{Computer systems organization~Redundancy}
-\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[500]{Computer systems organization~Embedded and cyber-physical systems}
+\ccsdesc[300]{Computer systems organization~Sensor networks}
 \ccsdesc[100]{Networks~Network reliability}
 
 % We no longer use \terms command
 %\terms{Theory}
 
-\keywords{ACM proceedings}
+\keywords{nanonetworks; computational complexity; space-complexity}
 
 
 \maketitle
@@ -111,8 +105,8 @@ For years, there has been talking of using nano-machines to create solutions in 
 Because Nano-machines are small, one question is how to implement these capabilities. 
 While many researchers already deal with communication technology \cite{akyildiz2008nanonetworks}, they usually leave out computational capabilities.
 In this paper, there is an attempt to provide a general analysis of the computational capability of nano-machines.
-Since the capabilities of nano-machines vary widely, from nanoparticles with no computational capabilities to microprocessors \cite{cobo2010bacteria}. Nano-machines divide into three groups according to complexity theory,
-by analyzing the tasks that nano-machines handle.
+Since the capabilities of nano-machines vary widely, from nanoparticles with no computational capabilities to microprocessors \cite{cobo2010bacteria}, nano-machines divide into three groups according to complexity theory.
+We define the three groups by analyzing the tasks that nano-machines handle.
 
 
 
@@ -142,11 +136,13 @@ by analyzing the tasks that nano-machines handle.
     \hline 
   \end{tabular}\\
     
-  \caption{Complexity classes of nano-machines and their problems}
+  \caption{Complexity classes of nano-machines and their problems. An L-machine could implement all the problems in the table.}
   \label{table1}
 \end{table}
-
-Most problems that a nano-machine has to solve need basic arithmetic.
+We can apply nano-machines to many scenarios.
+A few examples are detecting or treating cancer and supporting the human immune system.
+Those scenarios need a specific amount of computational power.\\
+Most scenarios, and therefore most problems a nano-machine has to solve, need basic arithmetic.
 The basis for value aggregation and routing schemes build addition $ADD$, subtraction $SUB$, multiplication $MULT$, $AND$/$OR$.
 To guide conditional behavior and support sensing strategies, we compare values with $SIGN$, $EVEN$/$ODD$, $THRES$ .\\
 Pattern matching $REG_{\alpha}$ can detect antibodys and $PARITY$ verifies message integrity.\\
@@ -179,14 +175,15 @@ An L-machine can solve problems like a Turing machine.
 The class $AC^0$ describes boolean circuits with polynomial-size and a constant depth, whereas the class $NC^1$ may have a logarithmic depth and two inputs per gate.\\ 
 Problems can lower their class if researchers can find new reductions for them. 
 However, problems exist that need more powerful machines or global knowledge about the network.
-Thus problems, like addressing, routing broadcasting/forwarding, could not be divided into the three complexity classes.\\
+Thus problems, like addressing, routing broadcasting/forwarding, could not be divided into the three complexity classes.
+They are therefore not included in table \ref{table1}.\\
 Insights into the feasibility of Nanao-machines provides the classification of the applications according to the computational power. 
 Researchers may consult Table \ref{table1} to implement a protocol or an algorithm in a nano-machine. 
 The algorithm must decompose into its basic operations. Afterward, the operation that is the most complex gives the decision for a complexity class.
 Just because a nano-machine may perform only a few easy operations does not mean that it is simple to build, but the choice of complexity class can help.\\
 Considering the $AC^0$ class, if a nano-machine can add, it may do all other operations of the complexity class.
 Let us take the complexity class $NC^1$ for a practical example. In the body, a nano-machine observes the concentration of a marker with $AVG$.
-Since $THRES$ is also in the same class, this nano-machine can also check if a defined value exceeds. This without increasing the complexity nor the memory.
+Since $THRES$ is also in the same class, this nano-machine can also check if a defined value exceeds. We can do this without increasing the complexity nor the memory.
 
 
 
@@ -197,8 +194,8 @@ This paper tries to close the gap of the insufficient specified computational re
 It does so by analyzing different scenarios. 
 The analyzed problems divide into three complexity classes: $AC^0$, $NC^1$, $L$.
 A nano-machine can then solve all the problems of his class and the class problems under him.\\
-However, additional components, such as storage or clocking, may mean that the classes do not represent the actual implementation of the nano-machines.
-Furthermore, we have not addressed the combination of operations, so the power of the complexity class may exceed.
+However, additional components, such as storage or clocking, may mean that the classes do not represent the actual implementation of the nano-machines.\\
+Furthermore, we have not addressed the combination of operations, so the power of the complexity class may exceed.\\
 In addition, the definition of additional complexity classes may specify the operations in more detail.
 
 
