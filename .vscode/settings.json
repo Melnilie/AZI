@@ -1,0 +1,25 @@
+{
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/Paper/MBadura.tex"
+            ],
+            "config": {
+                "audience": "expert",
+                "dialect": "american",
+                "domain": "academic",
+                "emotions": [
+                    "neutral",
+                    "confident",
+                    "respectful",
+                    "analytical"
+                ],
+                "goals": [
+                    "inform",
+                    "describe",
+                    "convince"
+                ]
+            }
+        }
+    ]
+}
